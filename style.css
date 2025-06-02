@@ -1,5 +1,4 @@
-/* Todas As Partes do Site Com Estilização
-de Secoes Com Border */
+/* Estilização geral das seções principais do site com borda */
 .header,
 .nav,
 .main,
@@ -13,42 +12,43 @@ section {
   border: 2px solid #a5a5a5;
 }
 
-/* Imagem da Logo do Senai No Cabecalho da Pagina */
+/* Imagem da logo do Senai no cabeçalho */
 #Logo_Empresa_Senai {
   max-width: 100%;
   height: 100px;
 }
 
-/* Navbar Com Background Color E Posicao Sticky */
+/* Barra de navegação com fundo colorido e posição sticky no topo */
 .nav {
   background-color: rgb(12, 68, 148);
-  position: sticky;
+  position: sticky; /* Fixa a navbar no topo ao rolar a página */
   top: 0;
   overflow: auto;
   height: 70px;
 }
 
-/* Imagem do Whatsapp Com Posicao Fixa 
-Para Aparecer No Canto da Pagina */
+/* Ícone do WhatsApp com posição fixa no canto inferior direito */
 .WhatsApp {
   position: fixed;
   border-radius: 50%;
+  opacity: 0.8;
   bottom: 10px;
   right: 10px;
   height: 100px;
   width: 100px;
 }
 
-/* Lista de Links Com Valor None que Some As Bolinhas */
+/* Itens da lista da navbar sem marcadores e alinhados à esquerda */
 .li_NavBar {
-  list-style-type: none;
-  float: left;
-  padding-left: 16%;
+  list-style-type: none; /* Remove os marcadores da lista */
+  float: left; /* Alinha os itens lado a lado à esquerda */
+  padding-left: 16%; /* Espaçamento para centralizar visualmente os itens */
 }
 
+/* Links da navbar com estilo personalizado */
 .NavBar_Links_a {
-  text-decoration: none;
-  color: #636262;
-  font-weight: bold;
-  font-size: 20px;
+  text-decoration: none; /* Remove o sublinhado */
+  color: #636262; /* Cor da fonte */
+  font-weight: bold; /* Negrito */
+  font-size: 20px; /* Tamanho da fonte */
 }
