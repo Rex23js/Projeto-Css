@@ -12,6 +12,18 @@ section {
   border: 2px solid #a5a5a5;
 }
 
+header {
+  background-color: #a5a5a5;
+}
+
+.Empresa {
+  font-family: "Roboto Condensed", sans-serif; /* Família da fonte */
+  font-style: italic; /* Deixa o texto em itálico */
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+
 /* Imagem da logo do Senai no cabeçalho */
 #Logo_Empresa_Senai {
   max-width: 100%;
@@ -48,7 +60,18 @@ section {
 /* Links da navbar com estilo personalizado */
 .NavBar_Links_a {
   text-decoration: none; /* Remove o sublinhado */
-  color: #636262; /* Cor da fonte */
+  color: #ffffff; /* Cor da fonte */
+  font-weight: bold; /* Negrito */
+  font-size: 20px; /* Tamanho da fonte */
+}
+
+.li_Aside {
+  list-style-type: none;
+}
+
+.Aside_Links_a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: #000000; /* Cor da fonte */
   font-weight: bold; /* Negrito */
   font-size: 20px; /* Tamanho da fonte */
 }
