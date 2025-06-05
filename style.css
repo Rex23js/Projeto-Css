@@ -1,3 +1,7 @@
+body {
+  background: linear-gradient(to right, #0d4494, #e65116);
+}
+
 /* Estilização geral das seções principais do site com borda */
 .header,
 .nav,
@@ -10,15 +14,19 @@ section {
   padding: 10px;
   margin: 10px;
   border: 2px solid #a5a5a5;
+  background-color: #ffffff; /* Cor de fundo branca */
 }
 
-header {
+/* Estilização do cabeçalho com cor de fundo cinza */
+#header {
   background-color: #a5a5a5;
 }
 
+/* Estilização do cabeçalho com fonte personalizada e itálico */
 .Empresa {
   font-family: "Roboto Condensed", sans-serif; /* Família da fonte */
   font-style: italic; /* Deixa o texto em itálico */
+  text-shadow: 7px 2px 3px #5f5f5f; /* Sombra do texto */
   font-weight: bold;
   text-align: center;
   display: inline-block;
@@ -65,10 +73,17 @@ header {
   font-size: 20px; /* Tamanho da fonte */
 }
 
+/*Centralização de texto no rodapé*/
+footer {
+  text-align: center;
+}
+
+/* Remove as marcacoes da lista na aba de noticias recentes*/
 .li_Aside {
   list-style-type: none;
 }
 
+/* Remove o Sublinhado dos Links da Aba de Noticias Recentes*/
 .Aside_Links_a {
   text-decoration: none; /* Remove o sublinhado */
   color: #000000; /* Cor da fonte */
