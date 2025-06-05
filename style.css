@@ -1,12 +1,11 @@
 body {
-  background: linear-gradient(to right, #0d4494, #e65116);
+  background: linear-gradient(to right, #e65116, #0d4494);
 }
 
 /* Estilização geral das seções principais do site com borda */
 .header,
 .nav,
 .main,
-.sidebar,
 .footer,
 .Canto_Fixo,
 .Parte_Grande,
@@ -20,6 +19,30 @@ section {
 /* Estilização do cabeçalho com cor de fundo cinza */
 #header {
   background-color: #a5a5a5;
+}
+
+/* Barra de navegação com fundo colorido e posição sticky no topo */
+.nav {
+  background-color: rgb(12, 68, 148);
+  position: sticky; /* Fixa a navbar no topo ao rolar a página */
+  top: 0;
+  overflow: auto;
+  height: 70px;
+}
+
+.nav_list {
+  display: flex; /* Alinha os itens lado a lado */
+  list-style: none; /* Remove marcadores da lista */
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+/* Itens da lista da navbar sem marcadores e alinhados à esquerda */
+.li_NavBar {
+  list-style-type: none; /* Remove os marcadores da lista */
+  /* Alinha os itens lado a lado à esquerda */
+  margin: 10px; /* Espaçamento para centralizar visualmente os itens */
 }
 
 /* Estilização do cabeçalho com fonte personalizada e itálico */
@@ -38,15 +61,6 @@ section {
   height: 100px;
 }
 
-/* Barra de navegação com fundo colorido e posição sticky no topo */
-.nav {
-  background-color: rgb(12, 68, 148);
-  position: sticky; /* Fixa a navbar no topo ao rolar a página */
-  top: 0;
-  overflow: auto;
-  height: 70px;
-}
-
 /* Ícone do WhatsApp com posição fixa no canto inferior direito */
 .WhatsApp {
   position: fixed;
@@ -56,13 +70,6 @@ section {
   right: 10px;
   height: 100px;
   width: 100px;
-}
-
-/* Itens da lista da navbar sem marcadores e alinhados à esquerda */
-.li_NavBar {
-  list-style-type: none; /* Remove os marcadores da lista */
-  float: left; /* Alinha os itens lado a lado à esquerda */
-  padding-left: 16%; /* Espaçamento para centralizar visualmente os itens */
 }
 
 /* Links da navbar com estilo personalizado */
