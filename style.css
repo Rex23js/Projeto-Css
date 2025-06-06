@@ -1,99 +1,120 @@
+/* Fundo com gradiente */
 body {
   background: linear-gradient(to right, #e65116, #0d4494);
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-/* Estilização geral das seções principais do site com borda */
+/* Estilos principais */
 .header,
 .nav,
 .main,
 .footer,
-.Canto_Fixo,
-.Parte_Grande,
-section {
+.section {
   padding: 10px;
   margin: 10px;
-  border: 2px solid #a5a5a5;
-  background-color: #ffffff; /* Cor de fundo branca */
+  background-color: #ffffff;
+  border-radius: 8px;
 }
 
-/* Estilização do cabeçalho com cor de fundo cinza */
+/* Cabeçalho com fundo cinza */
 #header {
   background-color: #a5a5a5;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-/* Barra de navegação com fundo colorido e posição sticky no topo */
+/* Estilo da empresa */
+.Empresa {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: italic;
+  text-shadow: 2px 2px 3px #5f5f5f;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Logo */
+#Logo_Empresa_Senai {
+  height: 100px;
+  width: auto;
+}
+
+/* NAVBAR */
 .nav {
-  background-color: rgb(12, 68, 148);
-  position: sticky; /* Fixa a navbar no topo ao rolar a página */
+  background-color: #0c4494;
+  position: sticky;
   top: 0;
-  overflow: auto;
-  height: 70px;
+  z-index: 10;
 }
 
 .nav_list {
-  display: flex; /* Alinha os itens lado a lado */
-  list-style: none; /* Remove marcadores da lista */
+  display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
-  align-items: center;
+  list-style: none;
 }
 
-/* Itens da lista da navbar sem marcadores e alinhados à esquerda */
 .li_NavBar {
-  list-style-type: none; /* Remove os marcadores da lista */
-  /* Alinha os itens lado a lado à esquerda */
-  margin: 10px; /* Espaçamento para centralizar visualmente os itens */
+  position: relative;
+  margin: 0 10px;
 }
 
-/* Estilização do cabeçalho com fonte personalizada e itálico */
-.Empresa {
-  font-family: "Roboto Condensed", sans-serif; /* Família da fonte */
-  font-style: italic; /* Deixa o texto em itálico */
-  text-shadow: 7px 2px 3px #5f5f5f; /* Sombra do texto */
-  font-weight: bold;
-  text-align: center;
+.NavBar_Links_a {
   display: inline-block;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-/* Imagem da logo do Senai no cabeçalho */
-#Logo_Empresa_Senai {
-  max-width: 100%;
-  height: 100px;
+/* Dropdown */
+.dropdown_Content {
+  padding-left: 25px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #0e59ca;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 100px;
 }
 
-/* Ícone do WhatsApp com posição fixa no canto inferior direito */
+li {
+  list-style: none;
+}
+
+.dropdown_Content li {
+  width: 100%;
+}
+
+.dropdown_Content a {
+  display: block;
+  padding: 10px;
+  color: white;
+}
+
+.li_NavBar:hover .dropdown_Content {
+  display: block;
+}
+
+/* WhatsApp ícone */
 .WhatsApp {
   position: fixed;
   border-radius: 50%;
   opacity: 0.8;
   bottom: 10px;
   right: 10px;
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
+  z-index: 999;
 }
 
-/* Links da navbar com estilo personalizado */
-.NavBar_Links_a {
-  text-decoration: none; /* Remove o sublinhado */
-  color: #ffffff; /* Cor da fonte */
-  font-weight: bold; /* Negrito */
-  font-size: 20px; /* Tamanho da fonte */
-}
-
-/*Centralização de texto no rodapé*/
-footer {
+/* Rodapé */
+.footer {
   text-align: center;
-}
-
-/* Remove as marcacoes da lista na aba de noticias recentes*/
-.li_Aside {
-  list-style-type: none;
-}
-
-/* Remove o Sublinhado dos Links da Aba de Noticias Recentes*/
-.Aside_Links_a {
-  text-decoration: none; /* Remove o sublinhado */
-  color: #000000; /* Cor da fonte */
-  font-weight: bold; /* Negrito */
-  font-size: 20px; /* Tamanho da fonte */
+  font-size: 14px;
 }
