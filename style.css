@@ -1,31 +1,37 @@
-/* Fundo com gradiente */
+/* 1. Reset e fundo */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   background: linear-gradient(to right, #e65116, #0d4494);
-  margin: 0;
   font-family: Arial, sans-serif;
 }
 
-/* Estilos principais */
+/* 2. Layout geral */
 .header,
 .nav,
 .main,
 .footer,
 .section {
-  padding: 10px;
-  margin: 10px;
   background-color: #ffffff;
   border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
 }
 
-/* Cabeçalho com fundo cinza */
+/* 3. Cabeçalho */
 #header {
   background-color: #a5a5a5;
   display: flex;
   align-items: center;
   gap: 20px;
 }
-
-/* Estilo da empresa */
+#Logo_Empresa_Senai {
+  height: 100px;
+  width: auto;
+}
 .Empresa {
   font-family: "Roboto Condensed", sans-serif;
   font-style: italic;
@@ -34,33 +40,21 @@ body {
   text-align: center;
 }
 
-/* Logo */
-#Logo_Empresa_Senai {
-  height: 100px;
-  width: auto;
-}
-
-/* NAVBAR */
+/* 4. Navbar */
 .nav {
   background-color: #0c4494;
   position: sticky;
   top: 0;
   z-index: 10;
 }
-
 .nav_list {
   display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
-
 .li_NavBar {
   position: relative;
   margin: 0 10px;
 }
-
 .NavBar_Links_a {
   display: inline-block;
   padding: 15px;
@@ -69,10 +63,7 @@ body {
   font-weight: bold;
   font-size: 18px;
 }
-
-/* Dropdown */
 .dropdown_Content {
-  padding-left: 25px;
   display: none;
   position: absolute;
   top: 100%;
@@ -80,40 +71,78 @@ body {
   background-color: #0e59ca;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  min-width: 100px;
 }
-
-li {
-  list-style: none;
-}
-
-.dropdown_Content li {
-  width: 100%;
-}
-
-.dropdown_Content a {
-  display: block;
-  padding: 10px;
-  color: white;
-}
-
 .li_NavBar:hover .dropdown_Content {
   display: block;
 }
+.dropdown_Content a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+}
 
-/* WhatsApp ícone */
+/* 5. Main (banner e texto) */
+.main img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Container de Grid para os primeiros cards */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.Card_Row_Center {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.Card_Row_Center .Card {
+  flex: 0 1 270px;
+  max-width: 270px;
+}
+
+/* Estilos gerais dos cards (mantidos do exemplo anterior) */
+.Card {
+  background-color: #fff;
+  border: 2px solid #e65116;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+}
+.Card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.Card h2 {
+  color: #e65116;
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+.Text_Card {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* 8. WhatsApp flutuante e Rodapé */
 .WhatsApp {
   position: fixed;
-  border-radius: 50%;
-  opacity: 0.8;
   bottom: 10px;
   right: 10px;
   height: 80px;
   width: 80px;
+  opacity: 0.9;
   z-index: 999;
 }
-
-/* Rodapé */
 .footer {
   text-align: center;
   font-size: 14px;
