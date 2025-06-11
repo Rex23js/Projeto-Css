@@ -89,7 +89,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Container de Grid para os primeiros cards */
+/* 6. Grid dos primeiros cards */
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
@@ -109,7 +109,7 @@ body {
   max-width: 270px;
 }
 
-/* Estilos gerais dos cards (mantidos do exemplo anterior) */
+/* 7. Estilo dos Cards */
 .Card {
   background-color: #fff;
   border: 2px solid #e65116;
@@ -148,25 +148,42 @@ body {
   text-align: center;
   font-size: 14px;
 }
+
+/* 9. Galeria de Fotos */
 .Photos_Container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 fotos por linha */
+  gap: 5px;
+  justify-items: center;
+  padding: 5px;
 }
 
 .Card_Photos {
   border: #0e59ca 2px solid;
-  margin: 50px 80px 50px 80px;
+  margin: 10px;
   border-radius: 10px;
   width: 200px;
-  height: 200px;
+  height: auto;
+  text-align: center;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .Card_Photos img {
   width: 100%;
-  height: 100%;
+  height: 200px;
   border-radius: 10px;
-  object-fit: cover; /* mantêm proporção sem esticar */
+  object-fit: cover;
+}
+
+.Card_Photos:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.Card_Photos h2 {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #0e59ca;
 }
